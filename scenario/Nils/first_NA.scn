@@ -1,8 +1,8 @@
-# Test scenario
+#scenario to create sectors
 
-#create an ac and set DEST to New York
-00:00:00.00>CRE KLM204,B744, 51'59'26.2746, 4'22'32.1528,275,FL350,350
-00:00:00.00>DEST KLM204,KJFK
+#sectors of the north atlantic traffic region (NAT)
+#coordinates are designated in degree north and degree east 
+#Converter: https://www.pgc.umn.edu/apps/convert/
 
 #Init Bodo Oceanic (ENOB)
 #DEFWPT deciaml notation needed
@@ -51,6 +51,37 @@
 00:00:00.00>DEFWPT Gander13, 61, -30, FIX
 00:00:00.00>DEFWPT Gander14, 45, -30, FIX
 
+#Init Nuuk (BGGL)
+#DEFWPT deciaml notation needed
+#source: Doc9634 NAT eANP Vol I
+00:00:00.00>DEFWPT Nuuk1, 82, 30, FIX
+00:00:00.00>DEFWPT Nuuk2, 82, 0, FIX
+00:00:00.00>DEFWPT Nuuk3, 73, 0, FIX
+00:00:00.00>DEFWPT Nuuk4, 73, -20, FIX
+00:00:00.00>DEFWPT Nuuk5, 70, -20, FIX
+00:00:00.00>DEFWPT Nuuk6, 63.5, -39, FIX
+00:00:00.00>DEFWPT Nuuk7, 58.5, -43, FIX
+00:00:00.00>DEFWPT Nuuk8, 58.5, -50, FIX
+00:00:00.00>DEFWPT Nuuk9, 65, -57.75, FIX
+00:00:00.00>DEFWPT Nuuk10, 76, -76, FIX
+00:00:00.00>DEFWPT Nuuk11, 78, -75, FIX
+00:00:00.00>DEFWPT Nuuk12, 82, -60, FIX
+00:00:00.00>DEFWPT Nuuk13, 87, -60, FIX
+00:00:00.00>DEFWPT Nuuk14, 87, 30, FIX
+
+#Init Shanwick Oceanic (EGGX)
+#DEFWPT deciaml notation needed
+#source: Doc9634 NAT eANP Vol I
+00:00:00.00>DEFWPT ShanWi1, 61, -30, FIX
+00:00:00.00>DEFWPT ShanWi2, 61, -10, FIX
+00:00:00.00>DEFWPT ShanWi3, 54.566667, -10, FIX
+00:00:00.00>DEFWPT ShanWi4, 54, -15, FIX
+00:00:00.00>DEFWPT ShanWi5, 51, -15, FIX
+00:00:00.00>DEFWPT ShanWi6, 51, -8, FIX
+00:00:00.00>DEFWPT ShanWi7, 45, -8, FIX
+00:00:00.00>DEFWPT ShanWi8, 45, -30, FIX
+
+
 #Init Santa Maria Oceanic (LPPO)
 #DEFWPT deciaml notation needed
 #source: Doc9634 NAT eANP Vol I
@@ -67,6 +98,17 @@
 00:00:00.00>DEFWPT SaMa11, 17, -37.5, FIX
 00:00:00.00>DEFWPT SaMa12, 22.3, -40, FIX
 
+#Init New York Oceanic East (KZNY)
+#DEFWPT deciaml notation needed
+#source: https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/ifr/#highAlt
+00:00:00.00>DEFWPT NY1, 27, -40, FIX
+00:00:00.00>DEFWPT NY2, 27, -60, FIX
+00:00:00.00>DEFWPT NY3, 38.5, -60, FIX
+00:00:00.00>DEFWPT NY4, 38.5, -69, FIX
+00:00:00.00>DEFWPT NY5, 40, -67, FIX
+00:00:00.00>DEFWPT NY6, 41.783333, -67, FIX
+00:00:00.00>DEFWPT NY7, 45, -51, FIX
+00:00:00.00>DEFWPT NY8, 45, -40, FIX
 
 #North Oceanic Transition Area (NOTA) [FL55 - unlimited]
 
