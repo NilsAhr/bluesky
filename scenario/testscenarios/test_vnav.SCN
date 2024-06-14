@@ -12,4 +12,5 @@
 0:00:00.00>Addwpt KL204 KAG03
 0:00:00.00>Addwpt KL204 KAG01
 
- 0:00:00.00>KL204 VNAV on     # Switch VNAV on (LNAV is already on due to ADDWPT)
+0:00:00.00>KL204 VNAV on     
+# Switch VNAV on (LNAV is already on due to ADDWPT)

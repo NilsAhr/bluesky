@@ -1,5 +1,23 @@
-#test scenario for 3 flights for most common city pairs
+#test scenario for 6 flights for most common city pairs
+#-------------- PLUGINS
+#init the plugin, can also be done in settings 
+#00:00:00.00>plugin load logger
+#start log statement
+#00:00:00.00>startlog
 
+#-------------- MANUAL LOGGER
+#datalog by CRELOG for Flight Status
+#0:00:00.00>CRELOG FLSTLOG 1.0 Flight Status log
+#0:00:00.00>FLSTLOG ADD FROM traf id, type, lat, lon, alt, distflown, work, hdg, trk, tas, gs, gsnorth, gseast, cas, M, vs, ax, p, rho, Temp, dtemp, windnorth, windeast, selspd, selalt, selvs
+#0:00:00.00>FLSTLOG ON
+
+#datalog by CRELOG for conflicts
+#conflict pairs missing, variable not found yet
+0:00:00.00>CRELOG CONFLOG 1.0 Conflict log
+0:00:00.00>CONFLOG ADD FROM traf.asas dcpa, tcpa, tcpamax, rpz, hpz, tLOS, qdr, dist
+0:00:00.00>CONFLOG ON
+
+#---------------- SZENARIO START
 #create CRE acid,type,lat,lon,hdg,alt,spd
 #Decimal notation for lat lon with  [N, E] north-eastern direction always
 
